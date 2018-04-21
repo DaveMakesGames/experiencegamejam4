@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: ac1b3d4456bd18645bbfb156f9b44c15
+  - enabled: 1
+    path: Assets/Scenes/Niaz.unity
+    guid: b2065196dd0a092478f7cc783be5c91c
