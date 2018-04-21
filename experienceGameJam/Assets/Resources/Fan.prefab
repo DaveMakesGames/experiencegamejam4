@@ -25,9 +25,9 @@ GameObject:
   - component: {fileID: 114968059717734674}
   - component: {fileID: 54194510998824310}
   - component: {fileID: 114276294929973310}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Fan
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,7 +132,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   speed: 100
-  readyIn: 5
+  readyIn: 2
 --- !u!136 &136228970887940868
 CapsuleCollider:
   m_ObjectHideFlags: 1

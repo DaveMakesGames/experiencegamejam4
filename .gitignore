@@ -1,5 +1,11 @@
 Experience Game Jam #4/Library/
 Experience Game Jam #4/Temp/
+<<<<<<< HEAD
 Experience Game Jam #4/.vs/Experience Game Jam #4/v15/Server/sqlite3/storage.ide
 Experience Game Jam #4/.vs/Experience Game Jam #4/v15/Server/sqlite3/db.lock
 experienceGameJam/Temp/UnityLockfile
+=======
+experienceGameJam/Library/
+experienceGameJam/Temp/UnityTempFile-30c3ba99a5b79204f8e12c0eb455e5b3
+experienceGameJam/Temp/
+>>>>>>> 670e052fe1f39cfd3154aa537330ea7aa5db3b44

@@ -234,8 +234,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BulletScript.cs" />
     <Compile Include="Assets\Enemymovement.cs" />
     <Compile Include="Assets\EnemyStats.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Base.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\EnemyBase.cs" />
@@ -256,7 +258,11 @@
     <Compile Include="Assets\Tools\ProCore\ProGrids\Classes\pg_SceneMeshRender.cs" />
     <Compile Include="Assets\Tools\ProCore\ProGrids\Classes\pg_Util.cs" />
     <Compile Include="Assets\Tools\ProCore\ProGrids\MonoBehaviour\pg_IgnoreSnap.cs" />
+=======
+    <Compile Include="Assets\Shoot.cs" />
+>>>>>>> 670e052fe1f39cfd3154aa537330ea7aa5db3b44
     <Compile Include="Assets\Towerbase.cs" />
+    <Compile Include="Assets\Towerspots.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Readme.txt" />

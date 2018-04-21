@@ -37,7 +37,7 @@ public class Enemymovement : MonoBehaviour
 
     private void MoveToPoints()
     {
-        Debug.Log("Move");
+        //Debug.Log("Move");
         Vector3 targetPosition = waypointList[currentWaypoint].position;
         Vector3 blub = new Vector3(targetPosition.x, transform.position.y, targetPosition.z);
         Vector3 Geschwindigkeit;
