@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Loser.unity
     guid: 14ee92d862e05a54e99442ec282c0cab
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: ac1b3d4456bd18645bbfb156f9b44c15

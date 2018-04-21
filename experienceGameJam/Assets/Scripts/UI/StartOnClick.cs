@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 public class StartOnClick : MonoBehaviour {
 
     public Button yourButton;
+    [SerializeField]
+    public Scene level;
 
     void Start()
     {
@@ -16,6 +18,6 @@ public class StartOnClick : MonoBehaviour {
 
     public void load()
     {
-        SceneManager.LoadScene("Niaz");
+        SceneManager.LoadScene("Level1");
     }
 }

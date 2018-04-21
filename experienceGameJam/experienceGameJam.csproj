@@ -237,20 +237,25 @@
     <Compile Include="Assets\BulletScript.cs" />
     <Compile Include="Assets\Enemymovement.cs" />
     <Compile Include="Assets\EnemyStats.cs" />
-<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Base.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\EnemyBase.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\SpotMenu.cs" />
     <Compile Include="Assets\Scripts\UI\EndScreenScript.cs" />
     <Compile Include="Assets\Scripts\UI\LeaveOnClick.cs" />
     <Compile Include="Assets\Scripts\UI\LifePointsScript.cs" />
     <Compile Include="Assets\Scripts\UI\MoneyScript.cs" />
     <Compile Include="Assets\Scripts\UI\PauseMenuScript.cs" />
+    <Compile Include="Assets\Scripts\UI\Radial Menu\Interactable.cs" />
+    <Compile Include="Assets\Scripts\UI\Radial Menu\RadialButton.cs" />
+    <Compile Include="Assets\Scripts\UI\Radial Menu\RadialMenu.cs" />
+    <Compile Include="Assets\Scripts\UI\Radial Menu\RadialMenuSpawner.cs" />
     <Compile Include="Assets\Scripts\UI\StartOnClick.cs" />
     <Compile Include="Assets\Scripts\UI\TimeScript.cs" />
     <Compile Include="Assets\Scripts\UI\TitleScreenScript.cs" />
     <Compile Include="Assets\Scripts\UI\Tower Menu\TowerMenuScript.cs" />
+    <Compile Include="Assets\Shoot.cs" />
     <Compile Include="Assets\Tools\ProCore\ProGrids\Classes\pg_Constant.cs" />
     <Compile Include="Assets\Tools\ProCore\ProGrids\Classes\pg_Enum.cs" />
     <Compile Include="Assets\Tools\ProCore\ProGrids\Classes\pg_IconUtility.cs" />
@@ -258,9 +263,6 @@
     <Compile Include="Assets\Tools\ProCore\ProGrids\Classes\pg_SceneMeshRender.cs" />
     <Compile Include="Assets\Tools\ProCore\ProGrids\Classes\pg_Util.cs" />
     <Compile Include="Assets\Tools\ProCore\ProGrids\MonoBehaviour\pg_IgnoreSnap.cs" />
-=======
-    <Compile Include="Assets\Shoot.cs" />
->>>>>>> 670e052fe1f39cfd3154aa537330ea7aa5db3b44
     <Compile Include="Assets\Towerbase.cs" />
     <Compile Include="Assets\Towerspots.cs" />
   </ItemGroup>

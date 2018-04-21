@@ -4,33 +4,31 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
-    public EnemyBase enemyBase;
-    public Base Base;
-    public GameObject loseScreen;
-    public GameObject winScreen;
-    public int geld;
+    public int enemyCount;
+    public int money;
+    public int livepoints;
 
     // Use this for initialization
     void Start () {
-        loseScreen.SetActive(false);
-        winScreen.SetActive(false);
-        geld = 5;
+        money = 5;
+        enemyCount = 20;
+        livepoints = 6;
     }
 	
 	// Update is called once per frame
 	void Update () {
-        if (Base.leben < 1) {
-            loseScreen.SetActive(true);
+        if (livepoints < 1) {
+            
             Time.timeScale = 0;
         }
-        if (enemyBase.enemyCount < 1) {
-            winScreen.SetActive(true);
+        if (enemyCount < 1) {
+            
             Time.timeScale = 0;
         }
 	}
 
     public int getLifePoints() {
-        return Base.leben;
+        return livepoints;
     }
 
     public int getTime()
@@ -40,6 +38,6 @@ public class GameManager : MonoBehaviour {
 
     public int getMoney()
     {
-        return geld;
+        return money;
     }
 }
