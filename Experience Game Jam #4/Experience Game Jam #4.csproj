@@ -238,6 +238,14 @@
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\EnemyBase.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\UI\EndScreenScript.cs" />
+    <Compile Include="Assets\Scripts\UI\LeaveOnClick.cs" />
+    <Compile Include="Assets\Scripts\UI\LifePointsScript.cs" />
+    <Compile Include="Assets\Scripts\UI\MoneyScript.cs" />
+    <Compile Include="Assets\Scripts\UI\PauseMenuScript.cs" />
+    <Compile Include="Assets\Scripts\UI\StartOnClick.cs" />
+    <Compile Include="Assets\Scripts\UI\TimeScript.cs" />
+    <Compile Include="Assets\Scripts\UI\TitleScreenScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Readme.txt" />
