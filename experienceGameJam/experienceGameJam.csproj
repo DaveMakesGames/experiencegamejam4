@@ -237,6 +237,7 @@
     <Compile Include="Assets\BulletScript.cs" />
     <Compile Include="Assets\Enemymovement.cs" />
     <Compile Include="Assets\EnemyStats.cs" />
+    <Compile Include="Assets\FacingCamera.cs" />
     <Compile Include="Assets\Scripts\Base.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\EnemyBase.cs" />
