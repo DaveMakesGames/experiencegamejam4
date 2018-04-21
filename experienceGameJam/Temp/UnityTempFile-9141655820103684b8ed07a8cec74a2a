@@ -159,9 +159,12 @@
 -define:ENABLE_NATIVE_ARRAY_CHECKS
 -define:UNITY_TEAM_LICENSE
 -define:ENABLE_VSTU
+Assets/BulletScript.cs
 Assets/Enemymovement.cs
 Assets/EnemyStats.cs
+Assets/Shoot.cs
 Assets/Towerbase.cs
+Assets/Towerspots.cs
 -r:"C:\Program Files\Unity_2017\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
 -r:"C:\Program Files\Unity_2017\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll"
 -r:"C:\Program Files\Unity_2017\Editor\Data\Mono\lib\mono\unity\UnityScript.dll"

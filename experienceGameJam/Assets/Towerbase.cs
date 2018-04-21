@@ -5,7 +5,6 @@ using UnityEngine;
 public class Towerbase : MonoBehaviour
 {
     public GameObject shootingRange;
-    public GameObject enemy;
     public float aoeDamage = 25;
     public float enemyLife;
     
@@ -14,7 +13,7 @@ public class Towerbase : MonoBehaviour
     {
         if(other.gameObject.tag == "enemy")
         {
-            Attack();
+            AttackEnemy();
         }
     }
 
@@ -23,44 +22,48 @@ public class Towerbase : MonoBehaviour
 
     }
 
-    public virtual void FindRandomTarget()
+    public void AttackEnemy()
     {
+
         if (shootingRange == null)
         {
+
             return;
         }
 
         int layer = 1 << 8;
-        float radius = shootingRange.GetComponent<SphereCollider>().radius * 2;
-        Collider[] stumpTargets = Physics.OverlapSphere(transform.position, radius, layer);
-        if (stumpTargets == null)
+        float radius = shootingRange.GetComponent<SphereCollider>().radius * 6;
+        Collider[] beatTargets = Physics.OverlapSphere(transform.position, radius, layer);
+        //Debug.Log("return");
+        if (beatTargets == null)
         {
             return;
         }
 
-        var collisionsCount = stumpTargets.Length;
+        var collisionsCount = beatTargets.Length;
         for (var i = 0; i < collisionsCount; ++i)
         {
-            var target = stumpTargets[i].GetComponent<EnemyStats>();
+            //Debug.Log("damage");
+            var target = beatTargets[i].GetComponent<EnemyStats>();
             if (target == null/* || !target.IsAlive*/)
             {
                 continue;
             }
 
             target.life -= aoeDamage;
-            //StompAttack(target);
+            //AOEAttack(target);
         }
     }
 
-    // Use this for initialization
-    void Start ()
-    {
+ //   // Use this for initialization
+ //   void Start ()
+ //   {
 		
-	}
+	//}
 	
-	// Update is called once per frame
-	void Update ()
-    {
+	//// Update is called once per frame
+	//void Update ()
+ //   {
 		
-	}
+	//}
 }
