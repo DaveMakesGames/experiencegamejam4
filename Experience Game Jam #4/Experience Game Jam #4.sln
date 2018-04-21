@@ -1,7 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Experience Game Jam #4", "Experience Game Jam #4.csproj", "{70963869-56B3-1C2F-3B84-859FEABC3F8D}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Experience Game Jam #4", "Assembly-CSharp.csproj", "{0F52A4E4-99AF-6DFE-25E5-777A02F95E2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Experience Game Jam #4", "Assembly-CSharp-Editor.csproj", "{82AE74E3-3769-2D0A-DD36-B64AAD591C67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,12 +11,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{70963869-56B3-1C2F-3B84-859FEABC3F8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{70963869-56B3-1C2F-3B84-859FEABC3F8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{70963869-56B3-1C2F-3B84-859FEABC3F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{70963869-56B3-1C2F-3B84-859FEABC3F8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F52A4E4-99AF-6DFE-25E5-777A02F95E2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F52A4E4-99AF-6DFE-25E5-777A02F95E2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F52A4E4-99AF-6DFE-25E5-777A02F95E2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F52A4E4-99AF-6DFE-25E5-777A02F95E2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82AE74E3-3769-2D0A-DD36-B64AAD591C67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82AE74E3-3769-2D0A-DD36-B64AAD591C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82AE74E3-3769-2D0A-DD36-B64AAD591C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82AE74E3-3769-2D0A-DD36-B64AAD591C67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
