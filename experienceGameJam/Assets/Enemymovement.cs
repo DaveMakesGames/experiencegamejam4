@@ -14,7 +14,7 @@ public class Enemymovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        //rb.AddForce(0, 50, 0);
+        rb.AddForce(0, 50, 0);
     }
 
     void Update()
@@ -28,9 +28,9 @@ public class Enemymovement : MonoBehaviour
 
     private void MoveToPoints()
     {
-
+        Debug.Log("Move");
         Vector3 targetPosition = waypointList[currentWaypoint].position;
-        Vector3 blub = new Vector3(targetPosition.x, 0, targetPosition.z);
+        Vector3 blub = new Vector3(targetPosition.x, transform.position.y, targetPosition.z);
         Vector3 Geschwindigkeit;
         Vector3 Bewegungsrichtung = transform.TransformDirection(Vector3.forward);
 
@@ -50,7 +50,8 @@ public class Enemymovement : MonoBehaviour
             }
             else
             {
-                currentWaypoint = 0;
+                //currentWaypoint = 0;
+                Debug.Log("Damge");
             }
             Geschwindigkeit = Vector3.zero;
         }
