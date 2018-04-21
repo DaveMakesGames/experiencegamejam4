@@ -8,11 +8,13 @@ public class GameManager : MonoBehaviour {
     public Base Base;
     public GameObject loseScreen;
     public GameObject winScreen;
+    public int geld;
 
     // Use this for initialization
     void Start () {
         loseScreen.SetActive(false);
         winScreen.SetActive(false);
+        geld = 5;
     }
 	
 	// Update is called once per frame
@@ -25,5 +27,19 @@ public class GameManager : MonoBehaviour {
             winScreen.SetActive(true);
             Time.timeScale = 0;
         }
-	}   
+	}
+
+    public int getLifePoints() {
+        return Base.leben;
+    }
+
+    public int getTime()
+    {
+        return Mathf.RoundToInt(Time.timeSinceLevelLoad);
+    }
+
+    public int getMoney()
+    {
+        return geld;
+    }
 }
