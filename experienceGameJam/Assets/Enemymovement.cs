@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemymovement : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class Enemymovement : MonoBehaviour
     float rotateSpeed = 8;
     int currentWaypoint = 0;
     Rigidbody rb;
+    bool readyToAttack = false;
+    public float readyIn = 5;
 
 
     void Start()
@@ -19,8 +22,14 @@ public class Enemymovement : MonoBehaviour
 
     void Update()
     {
-        RotateEnemy(waypointList[currentWaypoint].position);
-        MoveToPoints();
+        readyIn -= Time.deltaTime;
+
+        if(readyIn <= 0)
+        {
+            RotateEnemy(waypointList[currentWaypoint].position);
+            MoveToPoints();
+        }
+
     }
 
 
@@ -51,6 +60,7 @@ public class Enemymovement : MonoBehaviour
             else
             {
                 //currentWaypoint = 0;
+                SceneManager.LoadScene("Loser");
                 Debug.Log("Damge");
             }
             Geschwindigkeit = Vector3.zero;
